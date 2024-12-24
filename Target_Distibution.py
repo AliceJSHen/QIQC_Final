@@ -50,7 +50,7 @@ class TARGET_FUNCTION:
         target_distribution = {format(i, f'0{num_qubits}b'): prob for i, prob in enumerate(probabilities)}
         return target_distribution
     
-    def triangular(num_qubits, critical_point=0.3):
+    def triangular(num_qubits, critical_point=0.4):
         num_states = 2**num_qubits  # Total basis states
         critical_point = critical_point * num_states
 
