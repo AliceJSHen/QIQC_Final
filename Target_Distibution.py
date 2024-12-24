@@ -72,24 +72,6 @@ class TARGET_FUNCTION:
         # Create target distribution as a dictionary
         target_distribution = {format(i, f'0{num_qubits}b'): prob for i, prob in enumerate(probabilities)}
         return target_distribution
-    
-    def sinusoidal(num_qubits):
-        num_states = 2**num_qubits
-
-        probabilities = []
-        for i in range(num_states):
-            prob = np.sin(2 * np.pi * i / num_states)**2
-            if prob <= 0:
-                prob = 0.00001
-            probabilities.append(prob)
-        
-        # Normalize probabilities
-        probabilities = np.array(probabilities)
-        probabilities /= np.sum(probabilities)
-
-        # Create target distribution as a dictionary
-        target_distribution = {format(i, f'0{num_qubits}b'): prob for i, prob in enumerate(probabilities)}
-        return target_distribution
 
     
 
