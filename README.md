@@ -6,7 +6,7 @@ In this project, we implement quantum circuit born machine (QCBM) with qiskit.
 ## Team Members
 - Ting-An Wang, Department of Physics, NTU 
 - Shu-Han Chang, Department of Physics, NTU
-- Shuan Yu, Department of Electrical Engineering and Computer Science, NTU
+- Hsuan Yu, Department of Electrical Engineering and Computer Science, NTU
 
 ## Files
 - 	README:                                 This file
